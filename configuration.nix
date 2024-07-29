@@ -101,7 +101,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    cowsay
+    unzip
     vscode
     git
     gnome.gnome-tweaks
