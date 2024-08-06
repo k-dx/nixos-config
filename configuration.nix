@@ -57,7 +57,12 @@
 
   # Configure console keymap
   console.keyMap = "pl2";
-  console.font = "Lat2-Terminus16";
+  # console.font = "Lat2-Terminus32";
+  console = {
+    font = "ter-i32b";
+    packages = with pkgs; [ terminus_font ];
+  };
+  # boot.earlyVconsoleSetup = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
