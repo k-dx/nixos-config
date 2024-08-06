@@ -57,10 +57,10 @@
 
   # Configure console keymap
   console.keyMap = "pl2";
-  # console.font = "Lat2-Terminus32";
   console = {
     font = "ter-i32b";
     packages = with pkgs; [ terminus_font ];
+    earlySetup = true;
   };
   # boot.earlyVconsoleSetup = true;
 
@@ -107,6 +107,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    gnomeExtensions.pop-shell
     zed-editor
     unzip
     vscode
