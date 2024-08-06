@@ -57,7 +57,7 @@
 
   # Configure console keymap
   console.keyMap = "pl2";
-  console.font = "LatArCyrHeb-16";
+  console.font = "Lat2-Terminus16";
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
