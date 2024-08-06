@@ -13,7 +13,7 @@
 set -e
 
 # Edit your config
-$EDITOR configuration.nix
+# $EDITOR configuration.nix
 
 # cd to your config dir
 pushd ~/.config/nixos/
@@ -40,8 +40,11 @@ sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --c
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
 
+# Stage all changes, including new files
+git add ./\*.nix
+
 # Commit all changes witih the generation metadata
-git commit -am "$current"
+git commit -m "$current"
 
 # Back to where you were
 popd
