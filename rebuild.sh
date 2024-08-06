@@ -41,7 +41,7 @@ sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --c
 current=$(nixos-rebuild list-generations | grep current)
 
 # Stage all changes, including new files
-git add ./\*.nix
+git add ./\*.nix flake.lock
 
 # Commit all changes witih the generation metadata
 git commit -m "$current"
