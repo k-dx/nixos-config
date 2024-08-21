@@ -146,5 +146,5 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  boot.loader.grub.fontSize = 16;
+  boot.loader.systemd-boot.consoleMode = "2";
 }
