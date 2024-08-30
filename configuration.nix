@@ -107,8 +107,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    libnotify
+    gnomeExtensions.appindicator
     gnomeExtensions.pop-shell
+    libnotify
     zed-editor
     unzip
     vscode

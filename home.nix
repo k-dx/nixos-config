@@ -79,6 +79,11 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
+      document-font-name="Source Sans 3 Ultra-Light 13";
+      font-name="Source Sans 3 Ultra-Light 13";
+      monospace-font-name="Source Code Pro 13";
+      text-scaling-factor = "1.25";
+      show-battery-percentage=true;
     };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = "disabled";
