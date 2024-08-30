@@ -108,6 +108,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     keepassxc
+    pcloud
     gnomeExtensions.appindicator
     gnomeExtensions.pop-shell
     libnotify
