@@ -149,4 +149,9 @@
 
   boot.loader.systemd-boot.consoleMode = "2";
 
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-tour
+    epiphany
+  ]);
+
 }
