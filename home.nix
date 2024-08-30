@@ -81,13 +81,13 @@
       color-scheme = "prefer-dark";
     };
     "org/gnome/desktop/wm/keybindings" = {
+      minimize = "disabled";
       activate-window-menu = "disabled";
       toggle-quick-settings = "disabled";
       restore-shortcuts = "disabled";
       #toggle-message-tray = "disabled";
       close = ["<Super>q"];
       #maximize = "disabled";
-      minimize = "disabled";
       #move-to-monitor-down = "disabled";
       #move-to-monitor-left = "disabled";
       #move-to-monitor-right = "disabled";
