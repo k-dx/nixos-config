@@ -74,4 +74,52 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
+  dconf.settings = {
+    "org/gnome/desktop/wm/keybindings" = {
+      activate-window-menu = "disabled";
+      toggle-quick-settings = "disabled";
+      restore-shortcuts = "disabled";
+      #toggle-message-tray = "disabled";
+      close = ["<Super>q"];
+      #maximize = "disabled";
+      minimize = "disabled";
+      #move-to-monitor-down = "disabled";
+      #move-to-monitor-left = "disabled";
+      #move-to-monitor-right = "disabled";
+      #move-to-monitor-up = "disabled";
+      #move-to-workspace-down = "disabled";
+      #move-to-workspace-up = "disabled";
+      #toggle-maximized = ["<Super>m"]';
+      #unmaximize = "disabled";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+        #next = [ "<Shift><Control>n" ];
+        #previous = [ "<Shift><Control>p" ];
+        #play = [ "<Shift><Control>space" ];
+        custom-keybindings = [
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+          #"/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+        ];
+      };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      name = "launch terminal";
+      command = "kgx";
+      binding = "<Super>t";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      name = "launch files";
+      command = "nautilus";
+      binding = "<super>f";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      name = "launch browser";
+      command = "firefox";
+      binding = "<super>b";
+    };
+
+  };
 }
