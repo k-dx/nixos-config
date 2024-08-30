@@ -77,6 +77,9 @@
 
   # based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
   dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
     "org/gnome/desktop/wm/keybindings" = {
       activate-window-menu = "disabled";
       toggle-quick-settings = "disabled";
