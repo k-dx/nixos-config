@@ -110,12 +110,16 @@
       #toggle-message-tray = "disabled";
       close = ["<Super>q"];
       #maximize = "disabled";
-      #move-to-monitor-down = "disabled";
-      #move-to-monitor-left = "disabled";
-      #move-to-monitor-right = "disabled";
-      #move-to-monitor-up = "disabled";
-      #move-to-workspace-down = "disabled";
-      #move-to-workspace-up = "disabled";
+      move-to-monitor-down = "disabled";
+      move-to-monitor-left = "disabled";
+      move-to-monitor-right = "disabled";
+      move-to-monitor-up = "disabled";
+      move-to-workspace-left = ["<Shift><Super>h" "<Shift><Super>k"];
+      move-to-workspace-right = ["<Shift><Super>l" "<Shift><Super>j"];
+      move-to-workspace-down = "disabled";
+      move-to-workspace-up = "disabled";
+      switch-to-workspace-left=["<Control><Super>k" "<Control><Super>h" "<Control><Super>Left"];
+      switch-to-workspace-right=["<Control><Super>j" "<Control><Super>l" "<Control><Super>Right"];
       #toggle-maximized = ["<Super>m"]';
       #unmaximize = "disabled";
     };
@@ -138,12 +142,12 @@
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       name = "launch files";
       command = "nautilus";
-      binding = "<super>f";
+      binding = "<Super>f";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
       name = "launch browser";
       command = "firefox";
-      binding = "<super>b";
+      binding = "<Super>b";
     };
   };
 }
