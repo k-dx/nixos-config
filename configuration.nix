@@ -107,6 +107,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
+    pkgs.trash-cli
     pkgs-unstable.pcloud
     pkgs.google-chrome
     pkgs.freefilesync

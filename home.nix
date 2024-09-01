@@ -90,6 +90,15 @@
       text-scaling-factor = "1.25";
       show-battery-percentage=true;
     };
+    "org/gnome/shell" = {
+       favorite-apps=[
+         "firefox.desktop"
+         "org.gnome.Console.desktop"
+         "code.desktop'"
+         "org.gnome.Nautilus.desktop'"
+         "dev.zed.Zed.deskto"
+      ];
+    };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = "disabled";
       activate-window-menu = "disabled";
@@ -134,6 +143,4 @@
       binding = "<super>b";
     };
   };
-
-  programs.gnome-terminal.profile."*".audibleBell = false;
 }
