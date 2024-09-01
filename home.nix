@@ -93,6 +93,7 @@
     "org/gnome/shell" = {
        enabled-extensions = [
          "pop-shell@system76.com"
+         "appindicatorsupport@rgcjonas.gmail.com"
        ];
        favorite-apps = [
          "firefox.desktop"
