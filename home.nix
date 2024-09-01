@@ -2,6 +2,7 @@
 
 {
   imports = [
+    #./kgx.nix
     ./firefox.nix
   ];
 
@@ -132,6 +133,7 @@
       command = "firefox";
       binding = "<super>b";
     };
-
   };
+
+  programs.gnome-terminal.profile."*".audibleBell = false;
 }

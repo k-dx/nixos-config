@@ -21,20 +21,20 @@
           # add policies here...
 
           /* ---- EXTENSIONS ---- */
-          ExtensionSettings = {
-            #"*".installation_mode = "blocked"; # blocks all addons except the ones specified below
-            # uBlock Origin:
-            "uBlock0@raymondhill.net" = {
-              install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-              installation_mode = "force_installed";
-            };
-            # TreeStyleTab:
-            "treestyletab@piro.sakura.ne.jp" = {
-              install_url = "https://addons.mozilla.org/firefox/downloads/latest/tree-style-tab/latest.xpi";
-              installation_mode = "force_installed";
-            };
-            # add extensions here...
-          };
+          #ExtensionSettings = {
+          #  #"*".installation_mode = "blocked"; # blocks all addons except the ones specified below
+          #  # uBlock Origin:
+          #  "uBlock0@raymondhill.net" = {
+          #    install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+          #    installation_mode = "force_installed";
+          #  };
+          #  # TreeStyleTab:
+          #  "treestyletab@piro.sakura.ne.jp" = {
+          #    install_url = "https://addons.mozilla.org/firefox/downloads/latest/tree-style-tab/latest.xpi";
+          #    installation_mode = "force_installed";
+          #  };
+          #  # add extensions here...
+          #};
   
           /* ---- PREFERENCES ---- */
           # Set preferences shared by all profiles.
