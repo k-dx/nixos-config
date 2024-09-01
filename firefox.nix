@@ -1,3 +1,4 @@
+# https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265/5
 { config, pkgs, ... }:
 
   let
@@ -14,32 +15,37 @@
   programs = {
     firefox = {
       enable = true;
-      #package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
-      #  extraPolicies = {
-      #    DisableTelemetry = true;
-      #    # add policies here...
+      package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
+        extraPolicies = {
+          DisableTelemetry = true;
+          # add policies here...
 
-      #    /* ---- EXTENSIONS ---- */
-      #    ExtensionSettings = {
-      #      "*".installation_mode = "blocked"; # blocks all addons except the ones specified below
-      #      # uBlock Origin:
-      #      "uBlock0@raymondhill.net" = {
-      #        install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-      #        installation_mode = "force_installed";
-      #      };
-      #      # add extensions here...
-      #    };
+          /* ---- EXTENSIONS ---- */
+          ExtensionSettings = {
+            #"*".installation_mode = "blocked"; # blocks all addons except the ones specified below
+            # uBlock Origin:
+            "uBlock0@raymondhill.net" = {
+              install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+              installation_mode = "force_installed";
+            };
+            # TreeStyleTab:
+            "treestyletab@piro.sakura.ne.jp" = {
+              install_url = "https://addons.mozilla.org/firefox/downloads/latest/tree-style-tab/latest.xpi";
+              installation_mode = "force_installed";
+            };
+            # add extensions here...
+          };
   
-      #    /* ---- PREFERENCES ---- */
-      #    # Set preferences shared by all profiles.
-      #    Preferences = { 
-      #      "browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
-      #      "extensions.pocket.enabled" = lock-false;
-      #      "extensions.screenshots.disabled" = lock-true;
-      #      # add global preferences here...
-      #    };
-      #  };
-      #};
+          /* ---- PREFERENCES ---- */
+          # Set preferences shared by all profiles.
+          Preferences = { 
+            #"browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
+            "extensions.pocket.enabled" = lock-false;
+            #"extensions.screenshots.disabled" = lock-true;
+            # add global preferences here...
+          };
+        };
+      };
 
       /* ---- PROFILES ---- */
       # Switch profiles via about:profiles page.
