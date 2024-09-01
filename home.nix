@@ -91,9 +91,9 @@
       show-battery-percentage=true;
     };
     "org/gnome/shell" = {
-       enabled-extensions = [
-         "pop-shell@system76.com"
-       ];
+       #enabled-extensions = [
+       #  "pop-shell@system76.com"
+       #];
        favorite-apps = [
          "firefox.desktop"
          "org.gnome.Console.desktop"
