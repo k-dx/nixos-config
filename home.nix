@@ -91,7 +91,11 @@
       show-battery-percentage=true;
     };
     "org/gnome/shell" = {
-       favorite-apps=[
+       enabled-extensions = [
+         "vertical-overview@RensAlthuis.github.com"
+         "pop-shell@system76.com"
+       ];
+       favorite-apps = [
          "firefox.desktop"
          "org.gnome.Console.desktop"
          "code.desktop'"
