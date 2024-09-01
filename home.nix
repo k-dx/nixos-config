@@ -2,8 +2,8 @@
 
 {
   imports = [
-    #./kgx.nix
     ./firefox.nix
+    #./gnome.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -132,7 +132,7 @@
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
-          #"/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
         ];
       };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -149,6 +149,11 @@
       name = "launch browser";
       command = "firefox";
       binding = "<Super>b";
+    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+      name = "screenshot";
+      command = "flameshot";
+      binding = "<Super><Shift>s";
     };
   };
 }
