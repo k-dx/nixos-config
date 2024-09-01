@@ -5,7 +5,7 @@
     # NixOS official package source, using the nixos-23.11 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs?rev=5a83f6f984f387d47373f6f0c43b97a64e7755c0";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs?rev=5fc085988400e9723b81b5d13423bb8ed030334d";
 
     home-manager = {
       url = "github:nix-community/home-manager";
