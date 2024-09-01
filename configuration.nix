@@ -107,8 +107,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
-    pkgs.trash-cli
     pkgs-unstable.pcloud
+    pkgs.trash-cli
     pkgs.google-chrome
     pkgs.freefilesync
     pkgs.nnn
@@ -124,7 +124,6 @@
     pkgs.keepassxc
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
-    pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
     pkgs.zed-editor
     pkgs.unzip
