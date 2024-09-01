@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./firefox.nix
+    ./modules/home-manager/firefox.nix
     ./modules/home-manager/gnome.nix
   ];
 
