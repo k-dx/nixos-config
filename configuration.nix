@@ -108,6 +108,18 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
+    pkgs.google-chrome
+    pkgs.freefilesync
+    pkgs.nnn
+    pkgs.spotify
+    pkgs.mpv
+    pkgs.peek
+    pkgs.pdfarranger
+    pkgs.meld
+    pkgs.pika-backup
+    pkgs.darktable
+    pkgs.discord
+    pkgs.flameshot
     pkgs.keepassxc
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
