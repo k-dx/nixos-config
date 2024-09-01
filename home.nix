@@ -103,7 +103,7 @@
       ];
     };
     "org/gnome/desktop/wm/keybindings" = {
-      minimize = "disabled";
+      minimize = ["<Super>w"];
       activate-window-menu = "disabled";
       toggle-quick-settings = "disabled";
       restore-shortcuts = "disabled";
