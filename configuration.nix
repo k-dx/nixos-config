@@ -124,6 +124,7 @@
     pkgs.keepassxc
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
+    pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
     pkgs.zed-editor
     pkgs.unzip
