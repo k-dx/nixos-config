@@ -32,6 +32,10 @@ fi
 # Shows your changes
 git diff -U0 '*.nix'
 
+# Stage all changes, including new files
+# This has to be done before rebuild since Nix cannot f****** see files which are not in git
+git add ./\*.nix flake.lock
+
 echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
@@ -39,9 +43,6 @@ sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --c
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
-
-# Stage all changes, including new files
-git add ./\*.nix flake.lock
 
 # Commit all changes witih the generation metadata
 git commit -m "$current"
