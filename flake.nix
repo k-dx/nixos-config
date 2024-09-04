@@ -32,7 +32,6 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          # TODO replace ryan with your own username
           home-manager.users.kuba = import ./home.nix;
         }
       ];
