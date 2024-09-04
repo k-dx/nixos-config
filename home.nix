@@ -4,6 +4,7 @@
   imports = [
     ./modules/home-manager/firefox.nix
     ./modules/home-manager/gnome.nix
+    ./modules/home-manager/git.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -79,10 +80,4 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-  programs.git = {
-    enable = true;
-    userName  = "k-dx";
-    userEmail = "tornadowro@gmail.com";
-  };
 }
