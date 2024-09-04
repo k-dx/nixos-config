@@ -108,26 +108,26 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
-    pkgs.trash-cli
-    pkgs.google-chrome
-    pkgs.freefilesync
-    pkgs.nnn
-    pkgs.spotify
-    pkgs.mpv
-    pkgs.peek
-    pkgs.pdfarranger
-    pkgs.meld
-    pkgs.pika-backup
-    pkgs.darktable
-    pkgs.discord
-    pkgs.flameshot
-    pkgs.keepassxc
+    #pkgs.trash-cli
+    #pkgs.google-chrome
+    #pkgs.freefilesync
+    #pkgs.nnn
+    #pkgs.spotify
+    #pkgs.mpv
+    #pkgs.peek
+    #pkgs.pdfarranger
+    #pkgs.meld
+    #pkgs.pika-backup
+    #pkgs.darktable
+    #pkgs.discord
+    #pkgs.flameshot
+    #pkgs.keepassxc
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
     pkgs.libnotify
-    pkgs.zed-editor
+    #pkgs.zed-editor
     pkgs.unzip
-    pkgs.vscode
+    #pkgs.vscode
     pkgs.git
     pkgs.gnome.gnome-tweaks
     pkgs.vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
