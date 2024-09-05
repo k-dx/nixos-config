@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-# based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
+  # based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
@@ -10,9 +10,6 @@
       monospace-font-name="Source Code Pro 13";
       text-scaling-factor = 1.25;
       show-battery-percentage=true;
-    };
-    "org/gnome/desktop/background" = {
-      picture-uri = "file:///home/kuba/amber-l.jpg";
     };
     "org/gnome/shell" = {
        enabled-extensions = [
