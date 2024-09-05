@@ -11,6 +11,9 @@
       text-scaling-factor = 1.25;
       show-battery-percentage=true;
     };
+    "org/gnome/desktop/background" = {
+      picture-uri = "file:///home/kuba/amber-l.jxl";
+    };
     "org/gnome/shell" = {
        enabled-extensions = [
          "pop-shell@system76.com"
