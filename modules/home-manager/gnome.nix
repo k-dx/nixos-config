@@ -12,7 +12,7 @@
       show-battery-percentage=true;
     };
     "org/gnome/desktop/background" = {
-      picture-uri = "file:///home/kuba/amber-l.jxl";
+      picture-uri = "file:///home/kuba/amber-l.jpg";
     };
     "org/gnome/shell" = {
        enabled-extensions = [
