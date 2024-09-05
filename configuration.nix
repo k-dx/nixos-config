@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      #./wallpaper.nix
     ];
 
   # Bootloader.
@@ -119,7 +120,7 @@
     #pkgs.meld
     #pkgs.pika-backup
     #pkgs.darktable
-    #pkgs.discord
+    pkgs.discord
     #pkgs.flameshot
     pkgs.keepassxc
     pkgs.nnn
