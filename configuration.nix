@@ -170,5 +170,4 @@
     gnome-tour
     epiphany
   ]);
-
 }
