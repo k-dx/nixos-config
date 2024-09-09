@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      #./wallpaper.nix
     ];
 
   # Bootloader.
@@ -132,6 +131,8 @@
     pkgs.unzip
     pkgs.git
     pkgs.gnome.gnome-tweaks
+    pkgs.stow
+    pkgs.helix
     pkgs.vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     pkgs.wget
   ];
