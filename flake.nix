@@ -8,7 +8,7 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs?rev=7ad7b570e96a3fd877e5fb08b843d66a30428f12";
 
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -33,6 +33,27 @@
           home-manager.useUserPackages = true;
 
           home-manager.users.kuba = import ./hosts/nixos/home.nix;
+        }
+      ];
+    };
+    nixosConfigurations.nixos-kde = let
+        pkgs-unstable = import nixpkgs-unstable {
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+      in nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = {inherit pkgs-unstable;};
+      modules = [
+        # Import the previous configuration.nix we used,
+        # so the old configuration file still takes effect
+        ./hosts/nixos-kde/configuration.nix
+        # inputs.home-manager.nixosModules.default
+        inputs.home-manager.nixosModules.home-manager {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+
+          home-manager.users.kuba = import ./hosts/nixos-kde/home.nix;
         }
       ];
     };
