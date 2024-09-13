@@ -9,6 +9,13 @@
 #    4. If you uses a flake as your primary config, you can specify a path to `configuration.nix` in it and then `nixos-rebuild switch —flake` path/to/directory
 # As I hope was clear from the video, I am new to nixos, and there may be other, better, options, in which case I'd love to know them! (I'll update the gist if so)
 
+force_flag=false
+
+# Check if the first argument is --force or -f
+if [[ "$1" == "--force" || "$1" == "-f" ]]; then
+    force_flag=true
+fi
+
 # A rebuild script that commits on a successful build
 set -e
 
@@ -19,7 +26,7 @@ set -e
 pushd ~/.config/nixos/
 
 # Early return if no changes were detected (thanks @singiamtel!)
-if git diff --quiet '*.nix'; then
+if git diff --quiet '*.nix'  && [[ "$force_flag" == false ]]; then
     echo "No changes detected, exiting."
     popd
     exit 0
@@ -39,7 +46,8 @@ git add ./\*.nix flake.lock
 echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
-sudo nixos-rebuild switch &>nixos-switch.log || (git restore --staged ./\*.nix flake.lock; cat nixos-switch.log | grep --color -C 8 error && exit 1)
+sudo nixos-rebuild switch |& sudo tee nixos-switch.log &> /dev/null \
+ || (git restore --staged ./\*.nix flake.lock; cat nixos-switch.log | grep --color -C 8 error && exit 1)
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
