@@ -46,7 +46,7 @@ git add ./\*.nix flake.lock
 echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
-sudo nixos-rebuild switch |& sudo tee nixos-switch.log &> /dev/null \
+sudo nixos-rebuild switch --flake . |& sudo tee nixos-switch.log &> /dev/null \
  || (git restore --staged ./\*.nix flake.lock; cat nixos-switch.log | grep --color -C 8 error && exit 1)
 
 # Get current generation metadata
