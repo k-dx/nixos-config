@@ -58,7 +58,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          home-manager.sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
+          home-manager.sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
 
           home-manager.users.kuba = import ./hosts/nixos-kde/home.nix;
         }
