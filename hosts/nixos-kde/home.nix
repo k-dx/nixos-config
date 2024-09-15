@@ -5,6 +5,7 @@
     ../../modules/home-manager/firefox.nix
     #../../modules/home-manager/gnome.nix
     ../../modules/home-manager/git.nix
+    <plasma-manager/modules>
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -80,4 +81,12 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.plasma = {
+    enable = true;
+
+    workspace = {
+      lookAndFeel = "org.kde.breeze.desktop";
+    }
+  }
 }
