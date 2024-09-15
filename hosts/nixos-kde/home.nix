@@ -86,7 +86,7 @@
     enable = true;
 
     workspace = {
-      lookAndFeel = "org.kde.breezelight.desktop";
+      lookAndFeel = "org.kde.breeze.desktop";
     }
   }
 }
