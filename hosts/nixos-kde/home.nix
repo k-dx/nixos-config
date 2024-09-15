@@ -76,7 +76,8 @@
   #  /etc/profiles/per-user/kuba/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "emacs";
+    # EDITOR = "emacs";
+    TEST = "emacs";
   };
 
   # Let Home Manager install and manage itself.
