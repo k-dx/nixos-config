@@ -87,6 +87,7 @@
 
     workspace = {
       lookAndFeel = "org.kde.breeze.desktop";
-    }
-  }
+      iconTheme = "Papirus-Dark";
+    };
+  };
 }
