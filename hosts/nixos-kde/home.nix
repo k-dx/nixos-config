@@ -5,7 +5,7 @@
     ../../modules/home-manager/firefox.nix
     #../../modules/home-manager/gnome.nix
     ../../modules/home-manager/git.nix
-    <plasma-manager/modules>
+    inputs.plasma-manager.nixosModules.plasma-manager
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
