@@ -89,6 +89,10 @@
     shortcuts = {
       "kwin"."Switch One Desktop to the Left" = ["Meta+Ctrl+H" "Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left"];
       "kwin"."Switch One Desktop to the Right" = ["Meta+Ctrl+L" "Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right"];
+      # "kwin"."Window One Desktop Down" = "Meta+Ctrl+Shift+Down";
+      # "kwin"."Window One Desktop Up" = "Meta+Ctrl+Shift+Up";
+      "kwin"."Window One Desktop to the Left" = ["Meta+Shift+H" "Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left"];
+      "kwin"."Window One Desktop to the Right" = ["Meta+Shift+L" "Meta+Ctrl+Shift+Right"];
     };
 
     workspace = {
@@ -119,5 +123,10 @@
         ];
       }
     ];
+
+    kwin.virtualDesktops = {
+      number = 4;
+      rows = 1;
+    };
   };
 }
