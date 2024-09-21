@@ -86,6 +86,11 @@
   programs.plasma = {
     enable = true;
 
+    shortcut = {
+      "kwin"."Switch One Desktop to the Left" = ["Meta+Ctrl+H" "Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left"];
+      "kwin"."Switch One Desktop to the Right" = ["Meta+Ctrl+L" "Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right"];
+    };
+
     workspace = {
       lookAndFeel = "org.kde.breezedark.desktop";
       # iconTheme = "Papirus-Dark";
@@ -93,8 +98,25 @@
 
     panels = [
       {
-        position = "left";
+        location = "bottom";
         floating = false;
+      }
+      {
+        location = "left";
+        floating = false;
+        lengthMode = "fit";
+        hiding = "dodgewindows";
+        widgets = [
+          "org.kde.plasma.icontasks"
+        ];
+      }
+      {
+        location = "top";
+        floating = false;
+        height = 22;
+        widgets = [
+          "org.kde.plasma.globalmenu"
+        ];
       }
     ];
   };
