@@ -87,7 +87,7 @@
     enable = true;
 
     workspace = {
-      lookAndFeel = "org.kde.breezeDark.desktop";
+      lookAndFeel = "org.kde.breezedark.desktop";
       # iconTheme = "Papirus-Dark";
     };
   };
