@@ -83,12 +83,12 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  # programs.plasmaXD = {
-  #   enable = true;
+  programs.plasma = {
+    enable = true;
 
-  #   workspace = {
-  #     lookAndFeel = "org.kde.breeze.desktop";
-  #     iconTheme = "Papirus-Dark";
-  #   };
-  # };
+    workspace = {
+      lookAndFeel = "org.kde.breeze.desktop";
+      iconTheme = "Papirus-Dark";
+    };
+  };
 }
