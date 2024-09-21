@@ -92,10 +92,10 @@
     };
 
     panels = [
-      { 
+      {
         position = "left";
         floating = false;
-      };
+      }
     ];
   };
 }
