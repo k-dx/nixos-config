@@ -59,7 +59,7 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
 
-          home-manager.sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
+          # home-manager.sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
 
           home-manager.users.kuba = import ./hosts/nixos-kde/home.nix;
         }
