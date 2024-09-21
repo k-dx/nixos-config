@@ -84,7 +84,6 @@
   programs.home-manager.enable = true;
 
 
-programs.plasma.
   programs.plasma = {
     enable = true;
 
