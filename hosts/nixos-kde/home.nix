@@ -93,6 +93,6 @@ programs.plasma.
       # iconTheme = "Papirus-Dark";
     };
 
-    panels.*.floating = false;
+    panels."*".floating = false;
   };
 }
