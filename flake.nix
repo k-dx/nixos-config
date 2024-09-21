@@ -48,7 +48,7 @@
         };
       in nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = {inherit pkgs-unstable;};
+      specialArgs = {inherit pkgs-unstable inputs;};
       modules = [
         # Import the previous configuration.nix we used,
         # so the old configuration file still takes effect
