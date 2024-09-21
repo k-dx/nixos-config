@@ -128,5 +128,9 @@
       number = 4;
       rows = 1;
     };
+
+    configFile = {
+      "kdeglobals"."KDE"."AnimationDurationFactor" = 0.25;
+    };
   };
 }
