@@ -83,6 +83,8 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+
+programs.plasma.
   programs.plasma = {
     enable = true;
 
@@ -90,5 +92,7 @@
       lookAndFeel = "org.kde.breezedark.desktop";
       # iconTheme = "Papirus-Dark";
     };
+
+    panels.*.floating = false;
   };
 }
