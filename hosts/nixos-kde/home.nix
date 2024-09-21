@@ -86,7 +86,7 @@
   programs.plasma = {
     enable = true;
 
-    shortcut = {
+    shortcuts = {
       "kwin"."Switch One Desktop to the Left" = ["Meta+Ctrl+H" "Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left"];
       "kwin"."Switch One Desktop to the Right" = ["Meta+Ctrl+L" "Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right"];
     };
