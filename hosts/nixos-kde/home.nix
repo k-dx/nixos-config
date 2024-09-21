@@ -77,7 +77,6 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
-    TEST = "emacs";
   };
 
   # Let Home Manager install and manage itself.
@@ -92,6 +91,11 @@
       # iconTheme = "Papirus-Dark";
     };
 
-    panels."*".floating = false;
+    panels = [
+      { 
+        position = "left";
+        floating = false;
+      };
+    ];
   };
 }
