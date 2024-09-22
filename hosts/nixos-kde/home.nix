@@ -87,10 +87,13 @@
     enable = true;
 
     shortcuts = {
+      "kwin"."Switch One Desktop Down" = ["Meta+Ctrl+J" "Meta+Ctrl+Down"];
+      "kwin"."Switch One Desktop Up" = ["Meta+Ctrl+K" "Meta+Ctrl+Up"];
       "kwin"."Switch One Desktop to the Left" = ["Meta+Ctrl+H" "Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left"];
       "kwin"."Switch One Desktop to the Right" = ["Meta+Ctrl+L" "Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right"];
-      # "kwin"."Window One Desktop Down" = "Meta+Ctrl+Shift+Down";
-      # "kwin"."Window One Desktop Up" = "Meta+Ctrl+Shift+Up";
+
+      "kwin"."Window One Desktop Down" = ["Meta+Shift+K" "Meta+Ctrl+Shift+Down"];
+      "kwin"."Window One Desktop Up" = ["Meta+Shift+K" "Meta+Ctrl+Shift+Up"];
       "kwin"."Window One Desktop to the Left" = ["Meta+Shift+H" "Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left"];
       "kwin"."Window One Desktop to the Right" = ["Meta+Shift+L" "Meta+Ctrl+Shift+Right"];
     };
@@ -105,28 +108,28 @@
         location = "bottom";
         floating = false;
       }
-      {
-        location = "left";
-        floating = false;
-        lengthMode = "fit";
-        hiding = "dodgewindows";
-        widgets = [
-          "org.kde.plasma.icontasks"
-        ];
-      }
-      {
-        location = "top";
-        floating = false;
-        height = 22;
-        widgets = [
-          "org.kde.plasma.globalmenu"
-        ]
-      }
+      # {
+      #   location = "left";
+      #   floating = false;
+      #   lengthMode = "fit";
+      #   hiding = "dodgewindows";
+      #   widgets = [
+      #     "org.kde.plasma.icontasks"
+      #   ];
+      # }
+      # {
+      #   location = "top";
+      #   floating = false;
+      #   height = 22;
+      #   widgets = [
+      #     "org.kde.plasma.globalmenu"
+      #   ];
+      # }
     ];
 
     kwin.virtualDesktops = {
       number = 4;
-      rows = 1;
+      rows = 2;
     };
 
     configFile = {
