@@ -46,8 +46,10 @@ git add ./\*.nix flake.lock
 echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
+set -o pipefail # remember the return code after pipe
 sudo nixos-rebuild switch --flake . |& sudo tee nixos-switch.log &> /dev/null \
  || (git restore --staged ./\*.nix flake.lock; cat nixos-switch.log | grep --color -C 8 error && exit 1)
+set +o pipefail # unset
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
