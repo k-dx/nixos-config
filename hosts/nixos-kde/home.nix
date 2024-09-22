@@ -120,7 +120,7 @@
         height = 22;
         widgets = [
           "org.kde.plasma.globalmenu"
-        ];
+        ]
       }
     ];
 
