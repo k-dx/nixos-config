@@ -25,7 +25,17 @@
       ];
     };
     "org/gnome/shell/extensions/pop-shell" = {
+      # https://github.com/pop-os/shell/blob/master_focal/schemas/org.gnome.shell.extensions.pop-shell.gschema.xml
+      # https://github.com/pop-os/shell/blob/master_noble/keybindings/10-pop-shell-move.xml
+      pop-monitor-down = ["disabled"];
       pop-monitor-left = ["disabled"];
+      pop-monitor-right = ["disabled"];
+      pop-monitor-up = ["disabled"];
+
+      pop-workspace-down = ["disabled"];
+      pop-workspace-left = ["disabled"];
+      pop-workspace-right = ["disabled"];
+      pop-workspace-up = ["disabled"];
     };
     "org/gnome/shell/keybindings" = {
       toggle-quick-settings = "disabled";
@@ -42,8 +52,8 @@
       move-to-monitor-left = "disabled";
       move-to-monitor-right = "disabled";
       move-to-monitor-up = "disabled";
-      move-to-workspace-left = ["<Shift><Super>h" "<Shift><Super>u"];
-      # move-to-workspace-right = ["<Shift><Super>L" "<Shift><Super>j"];
+      move-to-workspace-left = ["<Shift><Super>h" "<Shift><Super>k" "<Shift><Super>Left"];
+      move-to-workspace-right = ["<Shift><Super>l" "<Shift><Super>j" "<Shift><Super>Right"];
       move-to-workspace-down = "disabled";
       move-to-workspace-up = "disabled";
       switch-to-workspace-left=["<Control><Super>k" "<Control><Super>h" "<Control><Super>Left"];
