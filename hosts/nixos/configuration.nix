@@ -174,4 +174,11 @@
     gnome-tour
     epiphany
   ]);
+
+  programs.nix-ld = {
+    enable = true;
+    libraries = [
+      # pkgs.somelib
+    ];
+  };
 }
