@@ -24,6 +24,9 @@
          "dev.zed.Zed.desktop"
       ];
     };
+    "org/gnome/shell/extensions/pop-shell" = {
+      pop-monitor-left = "disabled";
+    };
     "org/gnome/shell/keybindings" = {
       toggle-quick-settings = "disabled";
     };
