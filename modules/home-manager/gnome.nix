@@ -25,7 +25,7 @@
       ];
     };
     "org/gnome/shell/extensions/pop-shell" = {
-      pop-monitor-left = "disabled";
+      pop-monitor-left = ["<Super><Shift>p"];
     };
     "org/gnome/shell/keybindings" = {
       toggle-quick-settings = "disabled";
