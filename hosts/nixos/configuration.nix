@@ -108,7 +108,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
-    pkgs.screenkey
+    pkgs.anydesk
     pkgs.starship
     pkgs.trash-cli
     #pkgs.google-chrome
