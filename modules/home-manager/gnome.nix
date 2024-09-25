@@ -24,6 +24,9 @@
          "dev.zed.Zed.desktop"
       ];
     };
+    "org/gnome/shell/keybindings" = {
+      toggle-quick-settings = "disabled";
+    };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = ["<Super>w"];
       activate-window-menu = "disabled";
