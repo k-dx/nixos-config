@@ -39,7 +39,7 @@
       move-to-monitor-left = "disabled";
       move-to-monitor-right = "disabled";
       move-to-monitor-up = "disabled";
-      move-to-workspace-left = ["<Shift><Super>o"];
+      move-to-workspace-left = ["<Shift><Super>h"];
       # move-to-workspace-right = ["<Shift><Super>L" "<Shift><Super>j"];
       move-to-workspace-down = "disabled";
       move-to-workspace-up = "disabled";
