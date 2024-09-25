@@ -128,6 +128,7 @@
     pkgs.vscode
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
+    pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
     pkgs.unzip
     pkgs.git
