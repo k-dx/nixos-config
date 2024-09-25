@@ -26,6 +26,7 @@
     };
     "org/gnome/shell/keybindings" = {
       toggle-quick-settings = "disabled";
+      move-to-workspace-left = ["<Shift><Super>h" "<Shift><Super>k"];
     };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = ["<Super>w"];
