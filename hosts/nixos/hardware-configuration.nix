@@ -13,31 +13,43 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  # Enable LUKS encryption support
+  # /dev/nvme0n1p3: UUID="de4cc581-d077-4040-ae87-cbf3cbb81357" TYPE="crypto_LUKS" PARTUUID="900c801b-0820-4d87-b51a-687c53d39018"
+  boot.initrd.luks.devices = {
+    ruut = {
+      device = "/dev/disk/by-uuid/de4cc581-d077-4040-ae87-cbf3cbb81357";
+      preLVM = true;
+    };
+  };
+
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/595bdaba-4ecf-47d4-a937-06a17501102d";
+    { # device = "/dev/disk/by-uuid/ef7b0d78-3bf2-4cd8-bbb5-bed4ad8a7bbb";
+      device = "/dev/mapper/ruut";
       fsType = "btrfs";
       options = [ "subvol=root" "compress=zstd" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/595bdaba-4ecf-47d4-a937-06a17501102d";
+    { device = "/dev/mapper/ruut";
       fsType = "btrfs";
       options = [ "subvol=home" "compress=zstd" ];
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/595bdaba-4ecf-47d4-a937-06a17501102d";
+    { device = "/dev/mapper/ruut";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress=zstd" "noatime" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/12CE-A600";
+    { device = "/dev/disk/by-uuid/A140-F6C0";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  swapDevices = [ ];
+  swapDevices =
+    [ { device = "/dev/disk/by-uuid/d1520e78-82b5-426c-96ed-250a32a6dfb6"; }
+    ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

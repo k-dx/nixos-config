@@ -1,8 +1,8 @@
 # Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# your system. Help is available in the configuration.nix(5) man page, on
+# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, pkgs, pkgs-unstable, ... }:
+{ config, lib, pkgs, pkgs-unstable, ... }:
 
 {
   imports =
@@ -10,19 +10,19 @@
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
+  # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.consoleMode = "2";
 
   networking.hostName = "nixos"; # Define your hostname.
+  # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Warsaw";
@@ -107,10 +107,10 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
-    pkgs-unstable.pcloud
-    pkgs.anydesk
-    pkgs.starship
-    pkgs.trash-cli
+    #pkgs-unstable.pcloud
+    #pkgs.anydesk
+    #pkgs.starship
+    #pkgs.trash-cli
     #pkgs.google-chrome
     #pkgs.freefilesync
     #pkgs.spotify
@@ -120,21 +120,21 @@
     #pkgs.meld
     #pkgs.pika-backup
     #pkgs.darktable
-    pkgs.discord
+    #pkgs.discord
     #pkgs.flameshot
     pkgs.keepassxc
     pkgs.nnn
-    pkgs.zed-editor
-    pkgs.vscode
+    #pkgs.zed-editor
+    #pkgs.vscode
     pkgs.gnomeExtensions.appindicator
-    #pkgs.gnomeExtensions.pop-shell
+    pkgs.gnomeExtensions.pop-shell
     #pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
     pkgs.unzip
     pkgs.git
     pkgs.gnome.gnome-tweaks
     pkgs.stow
-    pkgs.helix
+    #pkgs.helix
     pkgs.vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     pkgs.wget
   ];
@@ -168,7 +168,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  boot.loader.systemd-boot.consoleMode = "2";
 
   environment.gnome.excludePackages = (with pkgs; [
     gnome-tour
