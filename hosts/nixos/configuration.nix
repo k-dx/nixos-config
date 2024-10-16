@@ -108,6 +108,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
+    pkgs.nodejs_22
     pkgs.fira
     #pkgs.anydesk
     #pkgs.starship
