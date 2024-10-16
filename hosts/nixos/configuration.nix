@@ -51,7 +51,7 @@
 
   # Configure keymap in X11
   services.xserver = {
-    xkb.layout = "pl";
+    xkb.layout = "pl,eu";
     xkb.variant = "";
   };
 
