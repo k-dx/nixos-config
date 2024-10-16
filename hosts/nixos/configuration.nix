@@ -107,25 +107,25 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
-    #pkgs-unstable.pcloud
+    pkgs-unstable.pcloud
     #pkgs.anydesk
     #pkgs.starship
-    #pkgs.trash-cli
-    #pkgs.google-chrome
-    #pkgs.freefilesync
-    #pkgs.spotify
-    #pkgs.mpv
+    pkgs.trash-cli
+    pkgs.google-chrome
+    pkgs.freefilesync
+    pkgs.spotify
+    pkgs.mpv
     #pkgs.peek
     #pkgs.pdfarranger
     #pkgs.meld
     #pkgs.pika-backup
     #pkgs.darktable
-    #pkgs.discord
-    #pkgs.flameshot
+    pkgs.discord
+    pkgs.flameshot
     pkgs.keepassxc
     pkgs.nnn
     #pkgs.zed-editor
-    #pkgs.vscode
+    pkgs.vscode
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
     #pkgs.gnomeExtensions.vertical-workspaces
@@ -134,7 +134,7 @@
     pkgs.git
     pkgs.gnome.gnome-tweaks
     pkgs.stow
-    #pkgs.helix
+    pkgs.helix
     pkgs.vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     pkgs.wget
   ];

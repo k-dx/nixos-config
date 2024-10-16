@@ -13,9 +13,8 @@
     };
     "org/gnome/shell" = {
        enabled-extensions = [
-         #"appindicatorsupport@rgcjonas.gmail.com"
-         #"pop-shell@system76.com"
-         "vertical-overview@RensAlthuis.github.com"
+         "appindicatorsupport@rgcjonas.gmail.com"
+         "pop-shell@system76.com"
        ];
        favorite-apps = [
          "firefox.desktop"
