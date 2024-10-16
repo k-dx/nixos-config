@@ -116,9 +116,9 @@
     pkgs.spotify
     pkgs.mpv
     #pkgs.peek
-    #pkgs.pdfarranger
-    #pkgs.meld
-    #pkgs.pika-backup
+    pkgs.pdfarranger
+    pkgs.meld
+    pkgs.pika-backup
     #pkgs.darktable
     pkgs.discord
     pkgs.flameshot
@@ -128,6 +128,7 @@
     pkgs.vscode
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
+    pkgs.pop-launcher
     #pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
     pkgs.unzip
