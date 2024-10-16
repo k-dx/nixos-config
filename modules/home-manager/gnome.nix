@@ -38,8 +38,8 @@
       pop-workspace-up = ["disabled"];
     };
     "org/gnome/shell/keybindings" = {
-      toggle-quick-settings = "disabled";
       screenshot=["<Shift><Super>s"];
+      toggle-quick-settings = "disabled";
     };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = ["<Super>w"];
