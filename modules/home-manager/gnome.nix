@@ -39,6 +39,7 @@
     };
     "org/gnome/shell/keybindings" = {
       toggle-quick-settings = "disabled";
+      screenshot=["<Shift><Super>s"];
     };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = ["<Super>w"];
@@ -60,7 +61,6 @@
       switch-to-workspace-right=["<Control><Super>j" "<Control><Super>l" "<Control><Super>Right"];
       #toggle-maximized = ["<Super>m"]';
       #unmaximize = "disabled";
-      screenshot=["<Shift><Super>s"];
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
         #next = [ "<Shift><Control>n" ];
