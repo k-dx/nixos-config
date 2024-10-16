@@ -38,7 +38,7 @@
       pop-workspace-up = ["disabled"];
     };
     "org/gnome/shell/keybindings" = {
-      screenshot=["<Shift><Super>s"];
+      # screenshot=["<Shift><Super>s"];
       toggle-quick-settings = "disabled";
     };
     "org/gnome/desktop/wm/keybindings" = {
