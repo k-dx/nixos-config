@@ -39,7 +39,7 @@
     };
     "org/gnome/shell/keybindings" = {
       # screenshot=["<Shift><Super>s"];
-      toggle-quick-settings = "disabled";
+      toggle-quick-settings = ["disabled"];
     };
     "org/gnome/desktop/wm/keybindings" = {
       minimize = ["<Super>w"];
