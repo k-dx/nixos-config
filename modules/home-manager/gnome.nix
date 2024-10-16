@@ -3,6 +3,12 @@
 {
   # based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
   dconf.settings = {
+    "org/gnome/desktop/input-sources" = {
+      show-all-sources = true;
+      sources = [
+        [ "xkb" "eu" ]
+      ];
+    };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       document-font-name="Source Sans 3 Ultra-Light 13";
