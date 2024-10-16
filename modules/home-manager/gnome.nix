@@ -6,7 +6,7 @@
     "org/gnome/desktop/input-sources" = {
       show-all-sources = true;
       sources = [
-        [ "xkb" "eu" ]
+        [ "xkb" "pl" ] [ "xkb" "eu" ]
       ];
     };
     "org/gnome/desktop/interface" = {
