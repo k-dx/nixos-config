@@ -37,8 +37,12 @@
       pop-workspace-right = ["disabled"];
       pop-workspace-up = ["disabled"];
     };
+    "org/gnome/mutter/keybindings" = {
+      toggle-tiled-left = ["disabled"];
+      toggle-tiled-right = ["disabled"];
+    };
     "org/gnome/shell/keybindings" = {
-      screenshot=["<Shift><Super>s"];
+      show-screenshot-ui=["<Shift><Super>s"];
       toggle-quick-settings = ["disabled"];
     };
     "org/gnome/desktop/wm/keybindings" = {
