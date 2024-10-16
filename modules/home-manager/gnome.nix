@@ -60,6 +60,7 @@
       switch-to-workspace-right=["<Control><Super>j" "<Control><Super>l" "<Control><Super>Right"];
       #toggle-maximized = ["<Super>m"]';
       #unmaximize = "disabled";
+      screenshot=["<Shift><Super>s"];
     };
     "org/gnome/settings-daemon/plugins/media-keys" = {
         #next = [ "<Shift><Control>n" ];
@@ -87,10 +88,10 @@
       command = "firefox";
       binding = "<Super>b";
     };
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-      name = "screenshot";
-      command = "flameshot gui";
-      binding = "<Super><Shift>s";
-    };
+    # "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+    #   name = "screenshot";
+    #   command = "flameshot gui";
+    #   binding = "<Super><Shift>s";
+    # };
   };
 }
