@@ -6,7 +6,7 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       document-font-name="Source Sans 3 Ultra-Light 13";
-      font-name="Source Sans 3 Ultra-Light 13";
+      font-name="Source Sans 3 Semi-Bold 13";
       monospace-font-name="Source Code Pro 13";
       text-scaling-factor = 1.15;
       show-battery-percentage=true;
