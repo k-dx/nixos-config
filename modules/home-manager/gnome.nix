@@ -27,6 +27,7 @@ with lib.hm.gvariant;
        enabled-extensions = [
          "appindicatorsupport@rgcjonas.gmail.com"
          "pop-shell@system76.com"
+         # "wsmatrix@martin.zurowietz.de"
        ];
        favorite-apps = [
          "firefox.desktop"
