@@ -17,6 +17,9 @@
       text-scaling-factor = 1.15;
       show-battery-percentage=true;
     };
+    "org/gnome/desktop/session" = {
+      idle-delay = 0;
+    };
     "org/gnome/shell" = {
        enabled-extensions = [
          "appindicatorsupport@rgcjonas.gmail.com"

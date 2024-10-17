@@ -26,7 +26,7 @@ set -e
 pushd ~/.config/nixos/
 
 # Early return if no changes were detected (thanks @singiamtel!)
-if git diff --quiet '*.nix'  && [[ "$force_flag" == false ]]; then
+if git diff --quiet '*.nix' && [[ "$force_flag" == false ]]; then
     echo "No changes detected, exiting."
     popd
     exit 0
