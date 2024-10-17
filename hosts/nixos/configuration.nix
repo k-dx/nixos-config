@@ -131,6 +131,7 @@
     pkgs.vscode
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
+    pkgs.gnomeExtensions.workspace-matrix
     pkgs.pop-launcher
     #pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
