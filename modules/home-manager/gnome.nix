@@ -1,4 +1,6 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
+
+with lib.hm.gvariant;
 
 {
   # based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
@@ -15,10 +17,11 @@
       font-name="Source Sans 3 Semi-Bold 13";
       monospace-font-name="Source Code Pro 13";
       text-scaling-factor = 1.15;
+      cursor-size = 32;
       show-battery-percentage=true;
     };
     "org/gnome/desktop/session" = {
-      idle-delay = 0;
+      idle-delay = mkUint32 0;
     };
     "org/gnome/shell" = {
        enabled-extensions = [
