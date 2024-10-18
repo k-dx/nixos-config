@@ -110,6 +110,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
+    pkgs.python3
     pkgs.android-studio
     pkgs.nodejs_22
     pkgs.fira
