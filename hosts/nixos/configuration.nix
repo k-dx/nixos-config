@@ -147,12 +147,12 @@
     pkgs.gnomeExtensions.appindicator
     pkgs.gnomeExtensions.pop-shell
     pkgs.gnomeExtensions.workspace-matrix
+    pkgs.gnome.gnome-tweaks
     pkgs.pop-launcher
-    #pkgs.gnomeExtensions.vertical-workspaces
     pkgs.libnotify
+    pkgs.zip
     pkgs.unzip
     pkgs.git
-    pkgs.gnome.gnome-tweaks
     pkgs.stow
     pkgs.helix
     pkgs.neovim
