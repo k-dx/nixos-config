@@ -195,4 +195,7 @@
 
   services.tailscale.enable = true;
   networking.firewall.checkReversePath = "loose"; # fix exit node
+
+  services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.package = pkgs.mullvad-vpn;
 }
