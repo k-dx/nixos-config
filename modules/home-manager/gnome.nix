@@ -5,6 +5,9 @@ with lib.hm.gvariant;
 {
   # based on https://heywoodlh.io/nixos-gnome-settings-and-keyboard-shortcuts
   dconf.settings = {
+    "org/gnome/mutter" = {
+      dynamic-workspaces = true;
+    };
     "org/gnome/desktop/input-sources" = {
       show-all-sources = true;
       sources = [
