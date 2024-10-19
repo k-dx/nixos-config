@@ -182,10 +182,5 @@
     epiphany
   ]);
 
-  programs.nix-ld = {
-    enable = true;
-    libraries = [
-      # pkgs.somelib
-    ];
-  };
+  services.tailscale.enable = true;
 }
