@@ -121,6 +121,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
+    pkgs.distrobox
     pkgs.python3
     pkgs.android-studio
     pkgs.nodejs_22
@@ -199,4 +200,10 @@
 
   services.mullvad-vpn.enable = true;
   services.mullvad-vpn.package = pkgs.mullvad-vpn;
+
+  # for distrobox:
+  virtualisation.podman = {
+    enable = true;
+    # dockerCompat = true;
+  };
 }
