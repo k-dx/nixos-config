@@ -57,6 +57,9 @@ current=$(nixos-rebuild list-generations | grep current)
 # Commit all changes witih the generation metadata
 git commit -m "$current"
 
+# Push changes
+git push
+
 # Back to where you were
 popd
 
