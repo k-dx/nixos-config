@@ -121,6 +121,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
+    pkgs.apktool
     pkgs.distrobox
     pkgs.python3
     pkgs.android-studio
