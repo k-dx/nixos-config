@@ -121,6 +121,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
+    pkgs.blender
     pkgs.jdk
     pkgs.jadx
     pkgs.apktool
