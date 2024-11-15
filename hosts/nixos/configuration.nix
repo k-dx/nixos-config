@@ -121,7 +121,7 @@
   # $ nix search wget
   environment.systemPackages = [ # with pkgs; [
     pkgs-unstable.pcloud
-    pkgs.texliveMedium
+    pkgs.texliveFull
     pkgs.blender
     pkgs.jdk
     pkgs.jadx
